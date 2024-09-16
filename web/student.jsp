@@ -8,9 +8,18 @@
 <body>
 <h1>WELCOME TO STUDENT PAGE</h1>
 
+<h1>${response}</h1>
+
+
+<table style="border: 1px black">
 <c:forEach items="${students}" var="student">
-    <h1>${student}</h1>
+    <tr>
+        <th>${student.fullName}</th>
+        <th>${student.age}</th>
+        <th>${student.phoneNumber}</th>
+    </tr>
 </c:forEach>
+</table>
 
 
 </body>
